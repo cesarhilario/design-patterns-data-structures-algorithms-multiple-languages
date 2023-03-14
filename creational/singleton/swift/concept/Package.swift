@@ -15,8 +15,5 @@ let package = Package(
         .executableTarget(
             name: "singletonConcept",
             dependencies: []),
-        .testTarget(
-            name: "singletonConceptTests",
-            dependencies: ["singletonConcept"]),
     ]
 )
