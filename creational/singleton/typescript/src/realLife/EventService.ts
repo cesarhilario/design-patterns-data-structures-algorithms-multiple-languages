@@ -2,7 +2,7 @@ type Listener = (value: string) => void;
 
 type Unsubscribe = { unsubscribe: () => void };
 
-class EventService {
+export class EventService {
   private listeners: Listener[] = [];
 
   protected static _instance: EventService | null = null;
@@ -36,15 +36,3 @@ class EventService {
     this.listeners.forEach((listener) => listener(value));
   }
 }
-
-const eventService = EventService.instance;
-
-const eventSubscription = eventService.subscribe((event) => console.log(event));
-
-eventService.emit("First Event");
-
-EventService.instance.emit("Second Event");
-
-eventSubscription.unsubscribe();
-
-EventService.instance.emit("Third event"); // Will not emit
