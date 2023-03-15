@@ -1,3 +1,4 @@
+// Client Code
 fun main(args: Array<String>) {
   val instanceA = Singleton.getInstance();
   val instanceB = Singleton.getInstance()

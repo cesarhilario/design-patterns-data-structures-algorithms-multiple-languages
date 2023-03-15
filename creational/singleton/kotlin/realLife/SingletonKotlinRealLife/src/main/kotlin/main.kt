@@ -1,3 +1,4 @@
+// Client code
 fun main(args: Array<String>) {
   val eventService = EventService.getInstance();
 
