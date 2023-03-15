@@ -16,9 +16,9 @@ class EventService private constructor() {
       }
     }
   }
-  
+
   private var listeners: MutableList<Listener> = arrayListOf()
-  
+
   fun emit(value: String) {
     this.notifyListeners(value)
   }
@@ -27,8 +27,8 @@ class EventService private constructor() {
     listeners.add(listener)
     return Unsubscribe { listeners.remove(listener) }
   }
-  
+
   private fun notifyListeners(value: String) {
     listeners.forEach { listener -> listener(value) }
-  } 
+  }
 }
