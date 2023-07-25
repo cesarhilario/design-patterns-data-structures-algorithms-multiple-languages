@@ -1,8 +1,8 @@
 import { Messaging } from "./infra/Messaging";
 import { Persistency } from "./infra/Persistency";
-import { Order } from "./entities/Order";
-import { ShoppingCart } from "./usecase/ShoppingCart";
-import { Product } from "./entities/Product";
+import { Order } from "./core/entities/Order";
+import { ShoppingCart } from "./core/usecase/ShoppingCart";
+import { Product } from "./core/entities/Product";
 
 const shoppingCart = new ShoppingCart();
 const messaging = new Messaging();

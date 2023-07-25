@@ -1,5 +1,4 @@
-import { CartItem } from "../protocols/CartItem";
-import { OrderStatus } from "../protocols/OrderStatus";
+import { CartItem } from "../../protocols/CartItem";
 
 export class ShoppingCart {
   private readonly _items: CartItem[] = [];

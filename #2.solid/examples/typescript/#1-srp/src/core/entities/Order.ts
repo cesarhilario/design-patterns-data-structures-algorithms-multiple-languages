@@ -1,8 +1,8 @@
-import { Messaging } from "../infra/Messaging";
-import { Persistency } from "../infra/Persistency";
+import { Messaging } from "../../infra/Messaging";
+import { Persistency } from "../../infra/Persistency";
 import { ShoppingCart } from "../usecase/ShoppingCart";
 
-import { OrderStatus } from "../protocols/OrderStatus";
+import { OrderStatus } from "../../protocols/OrderStatus";
 
 export class Order {
   private _orderStatus: OrderStatus = "open";
