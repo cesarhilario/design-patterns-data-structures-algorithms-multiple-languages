@@ -1,4 +1,4 @@
-# Simple Responsibility Principle
+# Single Responsibility Principle
 
 ## Definição
 
